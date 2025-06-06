@@ -1,0 +1,23 @@
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+textArea {
+  resize: none;
+  width: 250px;
+  height: 150px
+}
+
+.red {
+  color: red
+}
+
