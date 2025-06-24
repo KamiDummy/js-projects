@@ -6,55 +6,55 @@ const footballTeam = {
     {
       name: "Quiff",
       position: "goalkeeper",
-      isCapitan: true,
+      isCaptain: true,
     },
     {
       name: "Gorilla",
       position: "defender",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Recycle Bin",
       position: "forward",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Three Jack",
       position: "midfielder",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Biscuit Joe",
       position: "defender",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Lamp Shade",
       position: "midfielder",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Toilet Mike",
       position: "goalkeeper",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Slipper Dan",
       position: "forward",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Breadface",
       position: "defender",
-      isCapitan: false,
+      isCaptain: false,
     },
     {
       name: "Mr. Wiggles",
       position: "midfielder",
-      isCapitan: false,
+      isCaptain: false,
     },
   ],
-};
+}
 
 const teamSpan = document.querySelector("#team");
 const yearSpan = document.querySelector("#year");
@@ -75,7 +75,7 @@ function showPlayers(filter) {
   for (const player of footballTeam.players) {
     if (player.position === filter || filter === "all") {
       playerCards.innerHTML += `<div class="player-card">
-        <h2>${player.name}</h2>
+        <h2>${player.isCaptain ? "(Captain)" : ""} ${player.name}</h2>
         <p>Position: ${player.position}</p>
         </div>`;
     }
