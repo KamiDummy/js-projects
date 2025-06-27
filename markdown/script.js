@@ -11,8 +11,7 @@ const boldRegex = /[\*_][\*_](.+?)[\*_][\*_]/g;
 const italicRegex = /[\*_](.+?)[\*_]/g;
 const imgRegex = /!\[(.*)\]\((.*)\)/g;
 const linkRegex = /\[(.*)\]\((.*)\)/g;
-const quoteRegex = /^quote (.+$)/g;
-
+const quoteRegex = /^[quote|>] (.+$)/gm;
 function convertMarkdown() {
   let output = markDownInput.value;
   output = output.replace(h1Regex, "<h1>$1</h1>");
