@@ -23,7 +23,7 @@ function getResult() {
     "<span class='highlight'>$&</span>"
   );
   matched
-    ? (testResult.textContent = matched)
+    ? (testResult.textContent = matched.join(", "))
     : (testResult.textContent = "no match");
   1;
 }
