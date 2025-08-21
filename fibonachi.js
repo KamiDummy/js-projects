@@ -27,4 +27,3 @@ function fibonacciSequence(startSequence, length) {
   }
   return result;
 }
-console.log(fibonacciSequence([0, 1], 20));
