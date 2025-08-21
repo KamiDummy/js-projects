@@ -27,3 +27,5 @@ function fibonacciSequence(startSequence, length) {
   }
   return result;
 }
+
+console.log(fibonacciSequence([123456789, 987654321], 5));
