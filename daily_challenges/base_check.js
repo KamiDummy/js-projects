@@ -30,7 +30,6 @@
 function isValidNumber(n, base) {
   n = n.toUpperCase();
   const bases = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  console.log(bases.slice(0, base));
   for (let char of n) {
     if (bases.slice(0, base).includes(char)) continue;
     return false;
