@@ -16,8 +16,14 @@ function fibonacciSequence(startSequence, length) {
   let num1 = startSequence[0];
   let num2 = startSequence[1];
   let num3 = 0;
-  if (length === 1) return result.push(num1);
-  if (length === 2) return result.push(num1, num2);
+  if (length === 1) {
+    result.push(num1);
+    return result;
+  }
+  if (length === 2) {
+    result.push(num1, num2);
+    return result;
+  }
   result.push(num1, num2);
   for (let i = 0; i < length - 2; i++) {
     num3 = num1 + num2;
@@ -29,3 +35,5 @@ function fibonacciSequence(startSequence, length) {
 }
 
 console.log(fibonacciSequence([123456789, 987654321], 5));
+console.log(fibonacciSequence([21, 32], 1));
+console.log(fibonacciSequence([10, 20], 2));
