@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #868686;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery-item {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;            /* hidden initially */
+  position: fixed;          /* fixed positioning */
+  top: 0;                   /* align top-left */
+  left: 0;
+  width: 100%;              /* exactly viewport width */
+  height: 100%;             /* exactly viewport height */
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+
+#lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px black;
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
